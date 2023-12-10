@@ -1,0 +1,381 @@
+body { 
+  padding: 0;
+   margin: 0 }
+#unity-container { 
+  position: absolute 
+}
+#unity-container.unity-desktop { 
+  left: 50%; 
+  top: 100%; 
+  transform: translate(-50%, -50%) 
+}
+#unity-container.unity-mobile { 
+  position: fixed; 
+  width: 100%; 
+  height: 100% 
+}
+#unity-canvas { 
+  background:white 
+}
+.unity-mobile #unity-canvas { 
+  width: 100%; 
+  height: 100%;
+}
+#unity-loading-bar { 
+  position: absolute; 
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%); 
+  display: none 
+}
+#unity-logo { 
+  width: 154px; 
+  height: 130px; 
+  background: url('unity-logo-dark.png') no-repeat center 
+}
+#unity-progress-bar-empty { 
+  width: 141px; 
+  height: 18px; 
+  margin-top: 10px;
+   margin-left: 6.5px; 
+   background: url('progress-bar-empty-dark.png') no-repeat center
+   }
+#unity-progress-bar-full { 
+  width: 0%; 
+  height: 18px; 
+  margin-top: 10px; 
+  background: url('progress-bar-full-dark.png') no-repeat center 
+}
+#unity-footer { 
+  position: relative 
+}
+.unity-mobile #unity-footer { 
+  display: none 
+}
+#unity-webgl-logo { 
+  float:left; 
+  width: 204px; 
+  height: 38px; 
+  background: url('webgl-logo.png') no-repeat center 
+}
+#unity-build-title { 
+  float: right; 
+  margin-right: 10px; 
+  line-height: 38px; 
+  font-family: arial; 
+  font-size: 18px 
+}
+#unity-fullscreen-button { 
+  cursor:pointer; 
+  float: right; 
+  width: 38px; 
+  height: 38px; 
+  background: url('fullscreen-button.png') no-repeat center 
+}
+#unity-warning {
+   position: absolute;
+    left: 50%; 
+    top: 5%; 
+    transform: translate(-50%); 
+    background: white; padding: 10px; display: none
+   }
+
+h1{
+    color:Black;
+    font-weight: bold;
+    text-align: center;
+}
+h2{
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 67px;
+  bottom: 0%;
+
+}
+p{
+  color: black;
+  font-size: 30px;
+}
+
+  .center-text {
+    text-align: center;
+  }
+body {
+  background-color: lightgrey;
+}
+.resizeimg{
+  height: 70px;
+  width: 70px;
+}
+
+/* apple animation */
+.apple{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 440px;
+  animation: bounce 15s infinite;
+}
+.apple1{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 440px;
+  animation: bounce1 9s infinite;
+}
+.apple2{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 440px;
+  animation: bounce2 7.5s infinite;
+}
+/* banana animation */
+.banana{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 440px;
+  animation: bounce 10s infinite;
+}
+.banana1{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 440px;
+  animation: bounce1 6s infinite;
+}
+.banana2{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 440px;
+  animation: bounce2 12.3s infinite;
+}
+/* orange animation */
+.orange{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 440px;
+  animation: bounce 10.5s infinite;
+}
+.orange1{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 440px;
+  animation: bounce1 6.7s infinite;
+}
+.orange2{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 440px;
+  animation: bounce2 9s infinite;
+}
+/* watermelon animation */
+.watermelon{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 440px;
+  animation: bounce 11s infinite;
+}
+.watermelon1{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 440px;
+  animation: bounce1 9.7s infinite;
+}
+.watermelon2{
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  position: absolute;
+  top: 440px;
+  animation: bounce2 11.5s infinite;
+}
+/* animation movements */ 
+@keyframes bounce{
+  0%, 100%{
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(1900px);
+  }
+  50%{
+    transform: translateX(1000px);
+  }
+  75%{
+    transform: translateX(-200px);
+  }
+  }
+  @keyframes bounce1{
+    0%, 100%{
+      transform: translateX(100px);
+    }
+    25% {
+      transform: translateX(1600px);
+    }
+    50%{
+      transform: translateX(1200px);
+    }
+    75%{
+      transform: translateX(-200px);
+    }
+    }
+    @keyframes bounce2{
+      0%, 100%{
+        transform: translateX(50px);
+      }
+      25% {
+        transform: translateX(2100px);
+      }
+      50%{
+        transform: translateX(1300px);
+      }
+      75%{
+        transform: translateX(-200px);
+      }
+      } 
+
+/* Side bar*/ 
+
+.popOut {
+  width: 100%;
+}
+
+#sidebar {
+  width: 259px;
+  height: 170px;
+  background:grey;
+  position: fixed;
+  top: 150px;
+  transition: 0.5s;
+  transform: translateX(-350px);
+}
+
+#content {
+  width: 100%;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+#menu-button {
+  font-size: 60px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  color: white;
+  top: 10px;
+  margin: 20px;
+}
+
+#menu-button::before {
+  content: "\2630";
+}
+
+#sidebar.active {
+  transform: translateX(0);
+}
+a{
+  color: white;
+  font-size: xx-large;
+  text-decoration: none;
+}
+/* ask question about why i had to add this instaed of taking out "li" on html page" */
+li{
+  list-style: none;
+}
+.user-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  left: 500px;
+  width: 400px;
+  
+}
+
+.user-card img {
+  width: 100%;
+  position: relative;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.user-info {
+  padding: 20px;
+}
+
+.user-info h2 {
+  margin: 0;
+  color: #333;
+}
+
+.user-info p {
+  margin: 10px 0;
+  color: #777;
+
+}
+
+.user-card2 {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  left: 1000px;
+  bottom: 755px;
+  width: 400px;
+  
+}
+.user-card2 img {
+  width: 100%;
+  position: relative;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.user-info2 {
+  padding: 20px;
+}
+
+.user-info2 h2 {
+  margin: 0;
+  color: #333;
+}
+
+.user-info2 p {
+  margin: 10px 0;
+  color: #777;
+}
+/* rounded rectangle */
+.rounded-rectangle{
+  width: 2000;
+  height: 1700px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #5fea35;
+  box-shadow: 4px 4px 10px rgba (0,0,0,0.2);
+  text-align: center;
+  font-size: 18px;
+}
+

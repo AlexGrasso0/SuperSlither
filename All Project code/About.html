@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="'en">
+    <link rel="stylesheet" href="TemplateData/style.css">
+<head>
+    <title> About </title>
+</head>
+<header>
+  
+</header>
+<div class="center-text">
+    <img src="About.png" alt="">
+  </div>
+  
+ <!-- Links to get to the other webpages -->
+ <body>
+    <div class="popOut">
+        <div id="sidebar">
+            <ul>
+                <li><a href="HowToPlay.html">How to Play</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="menu-button" onclick="toggleSidebar()"></div>
+        </div>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            var content = document.getElementById("content");
+            sidebar.classList.toggle("active");
+            content.classList.toggle("active");
+        }
+    </script>
+</body>
+<body>
+    <div class="rounded-rectangle">
+        <h1>Background</h1>
+        <p class="floatleft"> Overall goal is to make a user-friendly website game to help players waste time when bored. The game functions inculde
+            game menu, game speed, high score system, controls (arrow keys), and webpage to host the game. Our 
+           motivation to create this game is that We personally like video games and are very passionate about video games so we figured why not create a user-friendly web game. 
+            </p> 
+
+        <div class="user-card">
+            <img src="Alex.jpeg" alt="User Profile Picture">
+            <div class="user-info">
+                <h2>Alex Grasso</h2>
+                <p>Web Developer</p>
+                <p> Ajgrasso0@frostburg.edu</p>
+            </div>
+        </div>
+
+        <div class="user-card2">
+            <img src="josh.png" alt="User Profile Picture">
+            <div class="user-info2">
+                <h2>Josh Benn</h2>
+                <p>Game Developer</p>
+                <p> Jcbenn0@frostburg.edu</p>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+
+</html>
